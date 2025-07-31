@@ -147,6 +147,10 @@ Modular model logic in model/
 
 Extendable Streamlit interface in app/
 
+colab link:
+https://colab.research.google.com/drive/10OxBhVX-TtIMVYWCfo79tOACsB4GwOwH?usp=sharing
+
+
 **🧑‍💻 Author**
 Abhienaya Sri
 
