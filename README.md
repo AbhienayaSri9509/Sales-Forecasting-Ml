@@ -1,6 +1,27 @@
-# 📊 Sales Forecasting App
+**Sales Forecasting & Inventory Optimization**
+
+**Objective**
+The goal of this project is to develop a machine learning solution for:
+
+Sales Prediction: Forecast sales volume of different products using historical data.
+
+Inventory Optimization: Suggest optimal restocking quantities and alert for overstock or stock-out risks.
+
+Reporting: Provide business insights and interactive dashboards for decision-making.
+
+
 
 This is a simple interactive web app built with **Streamlit** for uploading sales data and forecasting future sales using **Facebook Prophet**.
+
+ **Tools & Technologies**
+Component	               Tool/Library
+
+Language	                 Python
+Data Analysis	             Pandas, NumPy
+ML/Time-Series	             Prophet
+Visualization	             Matplotlib, Plotly
+App Interface	             Streamlit
+Code Management	             Git, GitHub
 
 ---
 
@@ -48,9 +69,8 @@ cd sales-forecast_project
 
 Create a virtual environment:
 
-bash
-Copy
-Edit
+
+
 python -m venv venv
 venv\Scripts\activate  # Windows
 
@@ -75,6 +95,7 @@ Ideal for time-series forecasting with daily/weekly data
 
 **Evaluation Metrics**
 Metric	                       Value(example)
+
 MAE (Mean Absolute Error)	    124.78
 RMSE (Root Mean Square Error)	167.45
 R² Score	                     0.84
@@ -88,6 +109,7 @@ License: Open use for educational/research
 
 **Columns Used for Modeling**
 ColumnName	           Description
+
 date	              Date of the sale
 product_id	          Unique product identifier
 category	          Product category
