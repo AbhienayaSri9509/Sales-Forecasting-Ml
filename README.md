@@ -43,10 +43,10 @@ sales_forecast_project/
 
 1. **Clone the repo:**
 
-git clone https://github.com/your-username/sales-forecasting-app.git
+git clone https://github.com/AbhienayaSri9509/Sales-Forecasting-Ml.git
 cd sales-forecast_project
 
-Create a virtual environment (recommended):
+Create a virtual environment:
 
 bash
 Copy
@@ -62,6 +62,39 @@ Run the app:
 
 python main.py
 
+**Model Selection**
+Model Used: Prophet (or change this to ARIMA/XGBoost if applicable)
+
+Why?
+
+Handles seasonality and trend well
+
+Easy to interpret and tune
+
+Ideal for time-series forecasting with daily/weekly data
+
+**Evaluation Metrics**
+Metric	                       Value(example)
+MAE (Mean Absolute Error)	    124.78
+RMSE (Root Mean Square Error)	167.45
+R² Score	                     0.84
+
+These metrics evaluate the model's ability to predict daily/weekly sales.
+
+**Dataset Information**
+Source: Kaggle - Retail Sales Forecasting Dataset
+
+License: Open use for educational/research
+
+**Columns Used for Modeling**
+ColumnName	           Description
+date	              Date of the sale
+product_id	          Unique product identifier
+category	          Product category
+units_sold	          Number of units sold on that date
+price	              Price per unit
+
+Columns like store, stock_left, and revenue were ignored or used in feature engineering depending on availability.
 
 **Input CSV Format**
 Ensure your CSV file contains:
@@ -76,12 +109,36 @@ Order Date	Sales
 2024-01-01	1250
 2024-01-02	1400
 
+**Transformations & Cleaning**
+Handled missing dates via forward filling
+
+Aggregated sales by product per day
+
+Converted date to datetime format
+
+Created features like:
+
+Day of week
+
+Month
+
+Lag values (previous week's sales)
+
+Normalized units_sold for model training
+
 **📈 Forecasting Details**
 Uses Facebook Prophet
 
 Default forecast: 30 days into the future
 
 Customizable aggregation and model options available in model/
+
+**Why This Dataset?**
+Contains realistic multi-product, multi-month sales
+
+Supports time-based modeling
+
+Helps simulate a real POS scenario for inventory optimization
 
 **🧪 Development**
 Exploratory notebooks in notebooks/
