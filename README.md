@@ -1,4 +1,4 @@
-**Sales Forecasting & Inventory Optimization**
+# 📈 Sales Forecasting & Inventory Optimization
 
 **Objective**
 The goal of this project is to develop a machine learning solution for:
