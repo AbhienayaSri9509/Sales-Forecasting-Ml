@@ -19,7 +19,7 @@ if uploaded_file is not None:
         st.subheader("Preview of your data:")
         st.dataframe(df.head())
 
-        # You can add forecasting code here
+       
 
     except Exception as e:
         st.error(f"❌ An error occurred while reading the file:\n\n{e}")

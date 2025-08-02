@@ -138,7 +138,7 @@ Aggregated sales by product per day
 
 Converted date to datetime format
 
-Created features like:
+**Created features like:**
 
 Day of week
 

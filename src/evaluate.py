@@ -40,8 +40,8 @@ def evaluate_on_dataframe(df, actual_col='y', predicted_col='yhat'):
     return evaluate_forecast(y_true, y_pred)
 
 if __name__ == "__main__":
-    # Example usage
-    df = pd.read_csv("data/test_predictions.csv")  # Ensure this has 'y' and 'yhat'
+
+    df = pd.read_csv("data/test_predictions.csv")  
     results = evaluate_on_dataframe(df)
     print("Evaluation Results:")
     for k, v in results.items():
